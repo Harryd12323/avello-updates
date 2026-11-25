@@ -3,9 +3,10 @@
 This repository only hosts downloads for Avello Labs apps. Avello Tech Logs
 reads them from here to update itself:
 
-- `latest.json`: the newest version and where to download it
-- `AvelloTechLogs-Setup-<version>.exe`: installers, signed by Avello Labs'
-  publisher; the app installs nothing that isn't
+- `latest.json`: the newest version, where to download it and its SHA-256,
+  signed with Avello Labs' update key; the app takes nothing that isn't
+  signed by that key, and installs only when the office says yes
+- `AvelloTechLogs-Setup-<version>.exe`: installers
 - `offices/*.pack`: each customer's settings, encrypted with a code only that
   customer and Avello Labs have
 
